@@ -1,0 +1,213 @@
+/*geralzao*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*fonte css aqui vei*/   
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100ph;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: rgb(127, 202, 255);
+}
+
+/* tentativa de cabeçalho*/
+
+header{
+    margin: 0 auto;
+    padding: 40px 30%;
+}
+
+header a{
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 60px;
+}
+
+/* topo do site estilo*/
+section.topo{
+    padding: 40 4%;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo h1{
+    color: #fff;
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.topo .texto-do-site h1 span{
+    color: rgb(127, 202, 255);
+}
+
+.topo .texto-do-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo .imagem-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0% {
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*especialidades nao tenhosocrro*/
+section.projetos-faculdade{
+    padding: 40px 20%;
+
+}
+
+section.projetos-faculdade .flex{
+    gap: 60px;
+}
+
+.projetos-faculdade .projetos-box{
+    color: #fff;
+    padding: 70px;
+    border-radius: 40px;
+    margin-top: 42px;
+    transition: .2s;
+}
+
+.projetos-faculdade .projetos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.34);
+}
+
+.projetos-faculdade .projetos-box i{
+    font-size: 52px;
+    color: rgb(127, 202, 255);
+
+}
+
+.projetos-faculdade .projetos-box h3{
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+/* rodapé eba */
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .linha2{
+    padding: 22px 0%;
+}
+
+.borda{
+    border-top: 2px solid #fff;
+    
+}
+
+.btn-social button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color:rgb(127, 202, 255);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+footer .linha2 p i{
+    color:rgb(127, 202, 255);
+    font-size: 20px;
+}
+
+footer .linha2 p a{
+    color: #fff;
+}
+
+/* responsivo */
+
+@media screen and (max-width: 1020px){
+/* geral classes */
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* cabeçalho */
+    .menu{
+        display: none;
+    }
+
+    section.topo .flex{
+        gap: 40px;
+    }
+
+    /* topo do site */
+    section.topo{
+        padding: 20 8%;
+    }
+
+    .topo h1{
+        font-size: 25px;
+    }
+
+    .topo .imagem-site img{
+        width: 100%;
+    }
+
+
+
+}
